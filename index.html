@@ -717,7 +717,7 @@
             <small style="coor:#5b2541">*Todos los campos son requeridos</small>
           </form> -->
           
-          <form
+          <form NAME="formulario"
             action="https://formspree.io/f/xoqyypgd"
             method="POST"
           >
@@ -748,6 +748,12 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <script  src="./js/script.js"></script>
+  <SCRIPT LANGUAGE=JAVASCRIPT><!--
+function limpiar() {
+    setTimeout('document.formulario.reset()',2000);
+    return false;
+}
+</SCRIPT>
 
 </body>
 </html>
