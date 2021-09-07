@@ -720,6 +720,7 @@
           <form NAME="formulario"
             action="https://formspree.io/f/xoqyypgd"
             method="POST"
+                id="form-comun"
           >
             <div class="form-group">
               <label class="sr-only" for="email">Email</label>
@@ -736,7 +737,7 @@
           
           <div class="modal-footer">
             <button type="button" class="btn td-btn outline small white" style="color:#5b2541" data-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn td-btn outline small white" style="color:#5b2541">Enviar</button>
+            <button type="submit" class="btn td-btn outline small white" style="color:#5b2541" id="limpiar">Enviar</button>
             </form>
           </div><!-- /.modal-footer -->
         </div><!-- /.modal-body -->
@@ -748,12 +749,12 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <script  src="./js/script.js"></script>
-  <SCRIPT LANGUAGE=JAVASCRIPT><!--
-function limpiar() {
-    setTimeout('document.formulario.reset()',2000);
-    return false;
-}
-</SCRIPT>
+  <script>
+    $(document).ready(function() {
+        $("#limpiar").click();
+        $("#form-comun > textarea").html("");
+    });
+</script>
 
 </body>
 </html>
