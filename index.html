@@ -721,11 +721,16 @@
             action="https://formspree.io/f/xoqyypgd"
             method="POST"
           >
-            <label class="form-control">
+            <div class="form-group">
+              <label class="sr-only" for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu Email" required>
+            </div><br>
+            <label>
              E-mail:
               <input type="email" name="_replyto">
             </label>
-            <label class="sr-only">
+            <br>
+            <label>
               Mensaje:
               <textarea name="message"></textarea>
             </label>
